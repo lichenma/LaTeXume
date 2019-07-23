@@ -1,0 +1,293 @@
+% LaTeX Template for Resume
+%
+% Acknowledgements
+% Moderncv Classic
+% Krishnr
+%
+% Author: 
+% Lichen Ma <lichenma123@gmail.com> 
+%
+
+%---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+% 		CONFIGURATIONS
+%---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+% letterpaper by default for US letter 
+\documentclass[11.9pt,letterpaper,sans]{moderncv}
+
+% moderncv classic is used as the template
+\moderncvtheme[black]{banking}
+
+
+
+\usepackage[utf8]{inputenc}
+
+% Configure page margins using geometry
+\usepackage[scale=0.8, top=1cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+\recomputelengths 
+
+% ensures the personal info is not italicized 
+\renewcommand*{\titlefont}{\Huge\mdseries\upshape}
+\renewcommand*{\addressfont}{\small\mdseries}
+
+
+\renewcommand*{\cventry}[7][.25em]{
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}%   
+      {\bfseries #3\ifthenelse{\equal{#6}{}}{}{, #6}} & {\itshape #2}\\%
+      {\itshape #4} & {\itshape #5}\\%
+  \end{tabular*}%
+  \ifx&#7&%
+    \else{\\\vbox{\small#7}}\fi%
+  \par\addvspace{#1}}
+
+
+
+
+
+
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%		PERSONAL INFORMATION
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+\vspace*{-0.3cm}
+\name{\fontsize{45}{50}{\textbf{\textcolor{color3}{Lichen}}}}{\fontsize{45}{50}{\textbf{\textcolor{color1}{Ma}}}}
+\vspace*{0.2cm}
+
+
+\makeatletter
+\patchcmd{\makehead}{%search
+    \ifthenelse{\equal{\@title}{}}{}{\titlestyle{~|~\@title}}\\%
+    }{%replace
+    \ifthenelse{\equal{\@title}{}}{}{\titlestyle{~|~\@title}}\\[0.3cm]%
+  }{%success
+  }{%failure
+  }
+\makeatother
+
+
+
+\email{\fontsize{25}{30}{l67ma@edu.uwaterloo.ca}}
+\social[linkedin][linkedin.com/in/lichenma]{linkedin.com/in/lichen-ma}
+%\phone{(+1) 403-612-6129}
+\social[github][github.com/lichenma]{github.com/lichenma}
+%\homepage{lichenma.github.io}
+
+\patchcmd{\makecvhead}{\end{tabular}}{\end{tabular}\relax}{}{}
+
+%\title{\normalsize An ambitious \&  passionate problem-solver who codes.}
+%\title{\normalsize \quad Computer Engineer}
+
+
+% command and color used in this document, independently from moderncv
+\definecolor{see}{rgb}{0.5,0.5,0.5}% for web links
+\newcommand{\up}[1]{\ensuremath{^\textrm{\scriptsize#1}}}% for text subscripts
+\renewcommand{\labelitemi}{$\circ$}
+
+% the two colors used in the title - 
+
+\definecolor{color1}{RGB}{90,150,180}
+\definecolor{color2}{rgb}{0.5, 0.5, 0.5}
+\definecolor{color3}{rgb}{0,0,0}
+
+
+
+%--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%            CONTENT
+%--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+\vspace*{-1.5cm}
+
+%--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%		SKILLS
+%--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+\setlength{\hintscolumnwidth}{0.1\textwidth}
+
+\section{\textbf{Skills}}
+\setlength{\hintscolumnwidth}{0.0000000001\textwidth}
+	%\cvitem{\textbullet}{\textbf{Web Development} / Spring, AngularJS, NodeJS, JS (ES6), React, SQL, HTML5, CSS3}
+	\cvitem{}{\textbf{Frameworks} / Spring, NodeJS, Express, AngularJS, React}
+	\cvitem{}{\textbf{Languages} / Java, JavaScript (ES6), C, C++, Python, SQL, Git}
+%	\cvitem{}{\textbf{Data Science} / Analysis using NumPy, Pandas, Statistical methods}
+%	\cvitem{}{\textbf{Mobile Development} / Android Game Development using Android Studio}
+%	\cvitem{}{\textbf{Product Management} / Strategic Planning, SDLC, UI/UX design, Agile/Scrum}
+%	\cvitem{\textbullet}{\textbf{Hardware} / VHDL, circuit design} 
+
+\setlength{\hintscolumnwidth}{0.1\textwidth}
+%---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%		EXPERIENCE
+%--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+\section{\textbf{Experience}}
+\vspace*{0.2cm}
+\setlength{\hintscolumnwidth}{0.175\textwidth}
+
+\renewcommand*{\cvitem}[3][.2em]{%
+  \begin{tabular}{@{}p{\maincolumnwidth}@{\hspace{\separatorcolumnwidth}}p{\hintscolumnwidth}@{}}%
+    {#3} &\raggedleft\hintstyle{#2}%
+  \end{tabular}%
+  \par\addvspace{#1}}
+
+% Fall 2019 at Symbility Intersect in Toronto 
+\cventry{Sept - Dec 2019}{Incoming Back-End Developer}{\protect\hspace{3px}\underline{\href{https://www.weareintersect.com/}{Intersect}}}{Toronto}{}{}
+
+\vspace*{0.2cm}
+
+% Winter 2019 at HubHead in Toronto 
+\cventry{Jan - Apr 2019}{Full-Stack Developer}{\protect\hspace{3px}\underline{\href{https://www.nrx.com/about-hubhead}{HubHead}}}{Markham}{}{
+            {\footnotesize
+                \begin{itemize}
+		\vspace*{0.2cm}
+                \item \small Developed the fullstack implementation of a duplicate workflow detection service for a cloud based multi-user application using \textbf{Spring}, \textbf{AngularJS}, and \textbf{PostgreSQL}
+                \item \small Added client-side and server-side data validations for an Asset Management web service using \textbf{MVEL} and \textbf{SQL}, complying with enterprise-level data standards 
+                \item \small Optimized user accounts workflow data structure to display crucial client data and populate internal \textbf{Bonita BPM} application for user account administration, adopted throughout the organization
+		\item \small Designed a SQL optimization job using Obsidian Job Scheduler, periodically removing unused database entries and \textbf{reducing process list load times by 20\%}
+               \vspace*{0.1cm}
+	       \end{itemize}
+            }
+        }
+\vspace*{0.2cm}
+
+% Summer 2018 at Extreme Networks in Markham 
+\cventry{Apr - Aug 2018}{Wireless LAN Engineer}{\protect\hspace{3px}\underline{\href{https://www.extremenetworks.com/}{Extreme Networks}}}{Markham}{}{
+			{\footnotesize
+				\begin{itemize}
+				\vspace*{0.2cm}
+				\item \small Automated REST API regression testing by creating Postman workflows to generate requests and JavaScript Assertions to perform validations, \textbf{shortened verification process by 60\%}
+				\item \small Managed the verification process for all user profile API endpoints using \textbf{Testlink}, meeting Corporate-level API standards
+				%\item \small Wrote up a detailed report analyzing API testing frameworks and presenting which framework would be the most suitable for the Extreme Cloud Appliance project
+				%\item \small Identified a major user profile bug before the product was launched to users
+				\vspace*{0.1cm}
+				\end{itemize}
+			}
+		}
+\vspace*{0.2cm}
+
+% Winter and Fall 2017 at Toronto Water in Scarborough
+\cventry{Jan - Apr 2017 \quad \quad Sept - Dec 2017}{DevOps Engineer}{\protect\hspace{3px}\underline{\href{https://www.toronto.ca/city-government/accountability-operations-customer-service/city-administration/staff-directory-divisions-and-customer-service/toronto-water/}{Toronto Water}}}{Toronto}{}{
+			{\footnotesize
+				\begin{itemize}
+				\vspace*{0.2cm}
+				\item \small Automated the generation of Asset data analytics using \textbf{Python} for data preprocessing and analysis, \textbf{shortened asset report generation process by 80\%}
+				\item \small Architected a network design including \textbf{IP addressing} and \textbf{security architecture} to provide network access to Power Distribution Units located in the company's datacenter
+				\item \small Collaborated with the native application team to present a desktop virtualization system, successfully transitioning all Toronto-wide plants to the new system technology
+				%\item \small Generated wireless survey data using Ekahau Technologies to accurately provide VoIP services
+				\vspace*{0.1cm}
+				\end{itemize}
+			}
+		}
+
+\renewcommand*{\cvitem}[3][.25em]{%
+  \begin{tabular}{@{}b{\hintscolumnwidth}@{\hspace{\separatorcolumnwidth}}b{\maincolumnwidth}@{}}%
+      \raggedleft\hintstyle{#2} &{#3}%
+  \end{tabular}%
+  \par\addvspace{#1}}
+
+
+
+%---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%		PROJECTS
+%---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+\setlength{\hintscolumnwidth}{0.1\textwidth}
+
+\section{\textbf{Projects}}
+\setlength{\hintscolumnwidth}{0.00000000000000000001\textwidth}
+	\cvitem{}{\textbf{\href{http://github.com/lichenma/Javalon}{Javalon - Spring Web Service Board Game}}}
+        \vspace*{-0.1cm}
+        \cvitem{}{
+            {\footnotesize
+                \begin{itemize}
+                \item Developed a real-time web service interpretation of the card-based board game "The Resistance: Avalon"
+		\item Designed the fullstack application implementation featuring user authentication, game-rooms, and real-time game synchronization across devices   using \textbf{WebSockets}, \textbf{Spring}, \textbf{AngularJS}, and \textbf{H2} 
+                \end{itemize}
+            }
+        }
+	
+	\vspace*{-0.5cm}
+        \cvitem{}{\textbf{\href{http://github.com/lichenma/WorldlyGoods}{Worldly Goods - NodeJS Web Service}}}
+        \vspace*{-0.1cm}
+        \cvitem{}{
+            {\footnotesize
+                \begin{itemize}
+                \item Developed a web application for recording and analyzing user monetary transactions to determine net worth 
+		\item Built the front-end infrastructure using \textbf{React} and integrated connections to the \textbf{MongoDB} database and \textbf{NodeJS} back-end using \textbf{Express}, and \textbf{Axios}
+                \end{itemize}
+            }
+        }
+	%\vspace*{-0.5cm}
+	%\cvitem{\textbullet}{\textbf{\href{http://github.com/lichenma/Prophit}{Prophit- Python Machine Learning}}}
+        %\vspace*{-0.1cm}
+        %\cvitem{}{
+        %   {\footnotesize
+        %      \begin{itemize}
+        %      \item Developed a \textbf{Python} script to perform time series forecasting for predicting future stock prices 
+	%	\item Incorporated Machine Learning techniques including Moving Average, Linear Regression, ARIMA, and LSTM
+        %        \end{itemize}
+        %   }
+        %}
+
+
+	\iffalse
+	\vspace*{-0.5cm}
+	\cvitem{\textbullet}{\textbf{\href{http://github.com/lichenma/Data-Structures}{Algorithms and Data Structures}}}
+        \vspace*{-0.1cm}
+        \cvitem{}{
+            {\footnotesize
+                \begin{itemize}
+                \item Developed parsers, double sentinel linked lists, resizable deques, AVL trees, and quadratic hash tables using Dev-C++
+		\item Compiled and tested these programs using the department of Computer Engineering’s Linux server
+                \end{itemize}
+            }
+        }
+
+	\vspace*{-0.5cm}
+	\cvitem{\textbullet}{\textbf{\href{http://github.com/lichenma/2048}{Gesture Controlled 2048}}}
+        \vspace*{-0.1cm}
+        \cvitem{}{
+            {\footnotesize
+                \begin{itemize}
+                \item 2048 game which responds to the vertical and horizontal movements of the user’s device 
+		\item Developed in Android Studio with Java using the accelerometer to determine the input gesture  
+                \end{itemize}
+            }
+        }
+
+	\fi
+
+	\vspace*{-0.5cm}
+
+\setlength{\hintscolumnwidth}{0.1\textwidth}
+
+%---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%		EDUCATION
+%---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+\section{\textbf{Education}}
+\setlength{\hintscolumnwidth}{0.15\textwidth}
+\renewcommand*{\cvitem}[3][.2em]{%
+  \begin{tabular}{@{}p{\maincolumnwidth}@{\hspace{\separatorcolumnwidth}}p{\hintscolumnwidth}@{}}%
+    {#3} &\raggedleft\hintstyle{#2}%
+  \end{tabular}%
+  \par\addvspace{#1}}
+
+\cventry{2016 - 2021}{Candidate for B.A.Sc in \href{https://uwaterloo.ca/electrical-computer-engineering/future-undergraduate-students/computer-engineering}{Computer Engineering}}{\protect\hspace{2px}\href{http://uwaterloo.ca}{University of Waterloo}}{3A Term}{}{}
+		%\vspace*{-0.5cm}
+		%\cvitem{}{
+			%{\footnotesize
+				%\begin{itemize}
+				%\item Related Coursework: Algorithms and Data Structures, Operating Systems and Systems Programming
+				%\item Related Coursework: Algorithms and Data Structures, Engineering Design with Embedded Systems, Operating SYstems and Systems 							Programming, Electronic Circuits
+				%\end{itemize}
+			%}
+		%}
+		%\vspace*{-3cm}
+
+
+%\cventry{2016}{International Baccalaureate Diploma}{Sir Winston Churchill High School}{}{}{}
+
+%---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%		INTERESTS
+%---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+%\section{\textbf{Interests}}
+%		\cvitem{\textbullet}{basketball, economics, travelling, philosophy}
+
+\end{document}
+%% end of file `page.tex'.
