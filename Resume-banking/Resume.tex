@@ -136,7 +136,7 @@
             {\footnotesize
                 \begin{itemize}
 		\vspace*{0.2cm}
-                \item \small Developed the full-stack implementation for a duplicate workflow detection service for a cloud based multi-user application, \textbf{eliminating back-end errors} resulting from user input overlap
+                \item \small Developed the full-stack implementation for a duplicate workflow detection service on a cloud based multi-user application, \textbf{eliminating back-end errors} resulting from user input overlap
                 \item \small Added client-side and server-side data validations for an Asset Management web service using \textbf{MVEL} and \textbf{SQL}, ensuring compliance with SAP masterdata standards 
                 %\item \small Optimized user accounts workflow data structure to display crucial client data and populate internal \textbf{Bonita BPM} application for user account administration, adopted throughout the organization
 		\item \small Designed a SQL optimization job using Obsidian Job Scheduler, periodically removing unused database entries and \textbf{reducing process list load times by 20\%}
@@ -227,20 +227,32 @@
 \setlength{\hintscolumnwidth}{0.1\textwidth}
 
 \section{\textbf{Projects}}
-\setlength{\hintscolumnwidth}{0.00000000000000000001\textwidth}
+\setlength{\hintscolumnwidth}{0.175\textwidth}
 
+
+\renewcommand*{\cvitem}[3][.2em]{%
+  \begin{tabular}{@{}p{\maincolumnwidth}@{\hspace{\separatorcolumnwidth}}p{\hintscolumnwidth}@{}}%
+    {#3} &\raggedleft\hintstyle{#2}%
+  \end{tabular}%
+  \par\addvspace{#1}}
 
 \cventry{}{\href{http://github.com/lichenma/Javalon}{Javalon - Spring Web Service Board Game}}{\textcolor{color2}{Java, Spring, AngularJS, H2, Websockets}}{}{}{
 			{\footnotesize
 				\begin{itemize}
 				\vspace*{0.2cm}
-				\item Developed a real-time web service interpretation of the card-based board game "The Resistance: Avalon"
-				\item Designed the full-stack application implementation featuring user authentication, game-rooms, chat-rooms and real-time game synchronization across devices driven by \textbf{Websockets}
+				\item \small Developed a \textbf{real-time} web service interpretation of the card-based board game "The Resistance: Avalon"
+				\item \small Designed the full-stack application implementation featuring user authentication, game-rooms, chat-rooms and real-time game synchronization across devices driven by \textbf{Websockets}
 				\vspace*{0.1cm}
 				\end{itemize}
 			}
 		}
 \vspace*{0.2cm}
+
+\renewcommand*{\cvitem}[3][.25em]{%
+  \begin{tabular}{@{}b{\hintscolumnwidth}@{\hspace{\separatorcolumnwidth}}b{\maincolumnwidth}@{}}%
+      \raggedleft\hintstyle{#2} &{#3}%
+  \end{tabular}%
+  \par\addvspace{#1}}
 
 
 %	\cvitem{}{\textbf{\href{http://github.com/lichenma/Javalon}{Javalon - Spring Web Service Board Game}}}
