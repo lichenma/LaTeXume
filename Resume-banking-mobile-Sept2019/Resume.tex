@@ -47,7 +47,7 @@
 %------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 %		PERSONAL INFORMATION
 %------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-\vspace*{-0.3cm}
+\vspace*{-0.4cm}
 \name{\fontsize{35}{40}{\textbf{\textcolor{color3}{Lichen}}}}{\fontsize{35}{40}{\textbf{\textcolor{color1}{Ma}}}}
 \vspace*{0.2cm}
 
@@ -95,29 +95,50 @@
 %--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 \begin{document}
 \maketitle
-\vspace*{-1.5cm}
+\vspace*{-1.2cm}
 
-%--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-%		SKILLS
-%--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-\setlength{\hintscolumnwidth}{0.1\textwidth}
 
-\section{\textbf{Skills}}
-\setlength{\hintscolumnwidth}{0.0000000001\textwidth}
-	%\cvitem{\textbullet}{\textbf{Web Development} / Spring, AngularJS, NodeJS, JS (ES6), React, SQL, HTML5, CSS3}
-	\cvitem{}{\textbf{Technologies} / Spring, NodeJS, Express, AngularJS, React, Android Studio, Git}
-	\cvitem{}{\textbf{Languages} / Java, JavaScript (ES6), C, C++, Python, SQL, Kotlin, HTML5, CSS3}
-%	\cvitem{}{\textbf{Data Science} / Analysis using NumPy, Pandas, Statistical methods}
-%	\cvitem{}{\textbf{Mobile Development} / Android Game Development using Android Studio}
-%	\cvitem{}{\textbf{Product Management} / Strategic Planning, SDLC, UI/UX design, Agile/Scrum}
-%	\cvitem{\textbullet}{\textbf{Hardware} / VHDL, circuit design} 
+%---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%		EDUCATION
+%---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%\vspace*{1.5cm}
+%\section{}
+\section{\textbf{Education}}
+\setlength{\hintscolumnwidth}{0.15\textwidth}
+\renewcommand*{\cvitem}[3][.2em]{%
+  \begin{tabular}{@{}p{\maincolumnwidth}@{\hspace{\separatorcolumnwidth}}p{\hintscolumnwidth}@{}}%
+    {#3} &\raggedleft\hintstyle{#2}%
+  \end{tabular}%
+  \par\addvspace{#1}}
 
-\setlength{\hintscolumnwidth}{0.1\textwidth}
+\cventry{\textcolor{color1}{Sept 2016 - May 2021}}{Candidate for Bachelor of Applied Science in \href{https://uwaterloo.ca/electrical-computer-engineering/future-undergraduate-students/computer-engineering}{Computer Engineering}}{\protect\hspace{2px}\href{http://uwaterloo.ca}{University of Waterloo}}{}{}{}
+
+%\cventry{}{\protect\hspace{2px}\href{http://uwaterloo.ca}{University of Waterloo} | \href{https://uwaterloo.ca/electrical-computer-engineering/future-undergraduate-students/computer-engineering}{Computer Engineering} | Graduation Year: 2021}{}{}{}{}
+
+
+
+		%\vspace*{-0.5cm}
+		%\cvitem{}{
+			%{\footnotesize
+				%\begin{itemize}
+				%\item Related Coursework: Algorithms and Data Structures, Operating Systems and Systems Programming
+				%\item Related Coursework: Algorithms and Data Structures, Engineering Design with Embedded Systems, Operating SYstems and Systems 							Programming, Electronic Circuits
+				%\end{itemize}
+			%}
+		%}
+		%\vspace*{-3cm}
+
+
+%\cventry{2016}{International Baccalaureate Diploma}{Sir Winston Churchill High School}{}{}{}
+
+
+
+
 %---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 %		EXPERIENCE
 %--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 \section{\textbf{Experience}}
-\vspace*{0.2cm}
+\vspace*{0.1cm}
 \setlength{\hintscolumnwidth}{0.175\textwidth}
 
 \renewcommand*{\cvitem}[3][.2em]{%
@@ -127,8 +148,14 @@
   \par\addvspace{#1}}
 
 % Fall 2019 at Symbility Intersect in Toronto 
-\cventry{\textcolor{color1}{Sept - Dec 2019}}{Back End Engineer \mdseries\protect\hspace{3px}\itshape{\href{https://www.weareintersect.com/}{Intersect}}}{\textcolor{color4}{Ruby, Rails, Java, Spring, Git, JIRA}}{Toronto, ON}{}{}{
-            
+\cventry{\textcolor{color1}{Sept - Dec 2019}}{Back End Engineer \mdseries\protect\hspace{3px}\itshape{\href{https://www.weareintersect.com/}{Intersect}}}{\textcolor{color4}{Ruby, Rails, RSpec, Java, Spring, Git, JIRA}}{Toronto, ON}{}{}{
+            {\footnotesize
+                \begin{itemize}
+		\vspace*{0.2cm}
+                \item \small Optimized room booking workflow data structure to display crucial client data and populate internal \textbf{Nexudus} application for user account administration, adopted throughout the organization 
+               \vspace*{0.1cm}
+	       \end{itemize}
+            }
         }
 
 \vspace*{0.4cm}
@@ -198,18 +225,18 @@
 
 
 % Winter 2017 at Toronto Water in Scarborough
-\cventry{\textcolor{color1}{Jan - Apr 2017}}{DevOps Engineer \mdseries\protect\hspace{3px}\itshape{\href{https://www.toronto.ca/city-government/accountability-operations-customer-service/city-administration/staff-directory-divisions-and-customer-service/toronto-water/}{Toronto Water}}}{\textcolor{color4}{TCP/IP, Routing/Switching, Cisco CLI}}{Toronto, ON}{}{
-			{\footnotesize
-				\begin{itemize}
-				\vspace*{0.2cm}
+%\cventry{\textcolor{color1}{Jan - Apr 2017}}{DevOps Engineer \mdseries\protect\hspace{3px}\itshape{\href{https://www.toronto.ca/city-government/accountability-operations-customer-service/city-administration/staff-directory-divisions-and-customer-service/toronto-water/}{Toronto Water}}}{\textcolor{color4}{TCP/IP, Routing/Switching, Cisco CLI}}{Toronto, ON}{}{
+%			{\footnotesize
+%				\begin{itemize}
+%				\vspace*{0.2cm}
 				%\item \small Automated the generation of Asset data analytics using \textbf{Python} for data preprocessing and analysis, \textbf{shortened asset report generation process by 80\%}
-				\item \small Architected a network design including \textbf{IP addressing} and \textbf{security architecture} to provide network access to Power Distribution Units located in the company's datacenter
+%				\item \small Architected a network design including \textbf{IP addressing} and \textbf{security architecture} to provide network access to Power Distribution Units located in the company's datacenter
 				%\item \small Collaborated with the native application team to present a desktop virtualization system, successfully transitioning all Toronto-wide plants to the new system technology
 				%\item \small Generated wireless survey data using Ekahau Technologies to accurately provide VoIP services
-				\vspace*{0.1cm}
-				\end{itemize}
-			}
-		}
+%				\vspace*{0.1cm}
+%				\end{itemize}
+%			}
+%		}
 
 
 
@@ -221,7 +248,7 @@
   \end{tabular}%
   \par\addvspace{#1}}
 
-\vspace*{-0.3cm}
+\vspace*{-0.6cm}
 
 %---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 %		PROJECTS
@@ -319,43 +346,49 @@
 
 	\fi
 
-	\vspace*{-0.5cm}
+	\vspace*{-0.6cm}
 
 \setlength{\hintscolumnwidth}{0.1\textwidth}
 
+
+
 %---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-%		EDUCATION
+%		INTERESTS
 %---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-\section{\textbf{Education}}
-\setlength{\hintscolumnwidth}{0.15\textwidth}
+\section{\textbf{Interests}}
+\setlength{\hintscolumnwidth}{0.175\textwidth}
+
+\vspace*{0.0cm}
 \renewcommand*{\cvitem}[3][.2em]{%
   \begin{tabular}{@{}p{\maincolumnwidth}@{\hspace{\separatorcolumnwidth}}p{\hintscolumnwidth}@{}}%
     {#3} &\raggedleft\hintstyle{#2}%
   \end{tabular}%
   \par\addvspace{#1}}
 
-\cventry{\textcolor{color1}{2016 - 2021}}{Candidate for Bachelor of Applied Science in \href{https://uwaterloo.ca/electrical-computer-engineering/future-undergraduate-students/computer-engineering}{Computer Engineering}}{\protect\hspace{2px}\href{http://uwaterloo.ca}{University of Waterloo}}{Third Year}{}{}
-		%\vspace*{-0.5cm}
-		%\cvitem{}{
-			%{\footnotesize
-				%\begin{itemize}
-				%\item Related Coursework: Algorithms and Data Structures, Operating Systems and Systems Programming
-				%\item Related Coursework: Algorithms and Data Structures, Engineering Design with Embedded Systems, Operating SYstems and Systems 							Programming, Electronic Circuits
-				%\end{itemize}
-			%}
-		%}
-		%\vspace*{-3cm}
+\cventry{\textcolor{color1}{Oct 2013 - June 2016}}{YMCA Youth Basketball Coach}{}{}{}{}
+\vspace*{-0.6cm}
 
 
-%\cventry{2016}{International Baccalaureate Diploma}{Sir Winston Churchill High School}{}{}{}
 
-%---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-%		INTERESTS
-%---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-%\section{\textbf{Interests}}
-%		\cvitem{\textbullet}{basketball, economics, travelling, philosophy}
+%--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%		SKILLS
+%--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+\setlength{\hintscolumnwidth}{0.1\textwidth}
+
+\section{\textbf{Skills}}
+\setlength{\hintscolumnwidth}{0.0000000001\textwidth}
+	%\cvitem{\textbullet}{\textbf{Web Development} / Spring, AngularJS, NodeJS, JS (ES6), React, SQL, HTML5, CSS3}
+	\cvitem{}{\textbf{Technologies} / Spring, NodeJS, Express, AngularJS, React, Android Studio, Git}
+	\cvitem{}{\textbf{Languages} / Java, JavaScript (ES6), C, C++, Python, SQL, Kotlin, HTML5, CSS3}
+%	\cvitem{}{\textbf{Data Science} / Analysis using NumPy, Pandas, Statistical methods}
+%	\cvitem{}{\textbf{Mobile Development} / Android Game Development using Android Studio}
+%	\cvitem{}{\textbf{Product Management} / Strategic Planning, SDLC, UI/UX design, Agile/Scrum}
+%	\cvitem{\textbullet}{\textbf{Hardware} / VHDL, circuit design} 
+
+\setlength{\hintscolumnwidth}{0.1\textwidth}
+
 
 \end{document}
 %% end of file `page.tex'.
